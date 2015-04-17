@@ -1,20 +1,15 @@
 ---
 layout: post
-title:  "Hello World!"
-date:   2013-11-10 18:05:00
+title:  "How to buid an OAuth2 protected REST API, using Spring Boot, Spring Security, and Spring Security OAuth2"
+date:   2014-04-16 23:46:00
 categories: General
 ---
 
-Hello world! This is my first (but hopefully not last) blog post! My goal is to write about anything I find interesting,
-helpful, and just plain cool. Oh, and space, definitely space. To stick with the programming theme, here's how to write
-a Hello World program in Scala.
+TODO
 
-{% highlight scala %}
-object HelloWorld extends App {
-  println("Hello World!")
-}
+{% highlight java %}
+System.out.println("TODO");
 {% endhighlight %}
 
-Be sure to check out my [GitHub page][github] to see some of my experiments!
 
 [github]: https://github.com/ccampo133
