@@ -3,7 +3,7 @@ description:
 meta_description: "C.J. Campo"
 
 markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
