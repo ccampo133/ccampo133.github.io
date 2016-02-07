@@ -2,7 +2,6 @@ name: Christopher J. Campo
 description:
 meta_description: "C.J. Campo"
 
-markdown: redcarpet
 highlighter: rouge
 logo: false
 paginate: 15
