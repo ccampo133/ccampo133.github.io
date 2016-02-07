@@ -11,5 +11,6 @@ domain_name: 'http://ccampo.me'
 google_analytics: 'UA-61649602-1'
 
 # Details for the RSS feed generator
-url:            'http://ccampo.me'
+url:            'https://ccampo.me'
+enforce_ssl:    'ccampo.me'
 author:         'Christopher J. Campo'
