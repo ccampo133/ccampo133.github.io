@@ -6,10 +6,10 @@ highlighter: rouge
 logo: false
 paginate: 15
 baseurl: /
-domain_name: 'http://ccampo.me'
+domain_name: 'http://www.ccampo.me'
 google_analytics: 'UA-61649602-1'
 
 # Details for the RSS feed generator
-url:            'https://ccampo.me'
-enforce_ssl:    'ccampo.me'
+url:            'https://www.ccampo.me'
+enforce_ssl:    'www.ccampo.me'
 author:         'Christopher J. Campo'
