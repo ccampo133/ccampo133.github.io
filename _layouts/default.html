@@ -25,7 +25,7 @@
     </script>
 
 </head>
-<body class="{% if layout.post_class %} {{layout.post_class}} {% else %} home-template {% endif %}">
+<body class="{% if layout.post_class %} {{layout.post_class}} {% elsif page.post_class %} {{page.post_class}} {% else %} home-template {% endif %}">
     {{ content }}
     <footer class="site-footer clearfix">
       <section class="copyright">
