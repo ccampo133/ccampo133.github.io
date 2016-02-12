@@ -21,7 +21,7 @@ post_class: post-template
             <section class="post-meta">
                 <time class="post-date" datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
                 {% if page.categories.size > 0 %}
-                    {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
+                {{ page.categories | array_to_sentence_string | prepend: 'on ' }}
                 {% endif %}
             </section>
         </header>
@@ -35,7 +35,7 @@ post_class: post-template
             <h5>Archive</h5>
             <ul>
                 {% for post in site.posts %}
-                    <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
                 {% endfor %}
             </ul>
         </section>
@@ -44,31 +44,40 @@ post_class: post-template
         <footer class="post-footer">
             <!-- If we want to display author's name and bio -->
             {% if site.author %}
-                <figure class="author-image">
-                    <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
+            <figure class="author-image">
+                <a class="img" href="{{ site.baseurl }}" style="background-image: url(/assets/images/profile.png)">
                     <span class="hidden">{{site.author}}'s Picture</span></a>
                 </figure>
                 <section class="author">
                     <!-- Author Name -->
                     <h4> {{ site.author }} </h4>
                     <!-- Author Bio -->
-                    <p>
-                        I'm a sofware engineer for Aspect Cloud, dog lover, tech enthusiast, gamer, husband, data hound,
-                        R/F tinkerer, linux user, amateur astronomer... among other things!
-                    </p>
+                    {% if site.bio %}
+                    <p>{{site.bio}}</p>
+                    {% else %}
+                    <p>Read <a href="{{site.baseurl}}">more posts</a> by this author.</p>
+                    {% endif %}
+                    <div class="author-meta">
+                        {% if site.location %}
+                        <span class="author-location icon-location">{{site.location}}</span>
+                        {% endif %}
+                        {% if site.website %}
+                        <span class="author-link icon-link"><a href="{{site.website}}">{{site.website}}</a></span>
+                        {% endif %}
+                    </div>
                 </section>
-            {% endif %}
+                {% endif %}
 
-            <!-- Share links section -->
-            {% include share.html %}
+                <!-- Share links section -->
+                {% include share.html %}
 
-            <!-- Disqus comments -->
-            {% if layout.disqus %}
+                <!-- Disqus comments -->
+                {% if layout.disqus %}
                 {% include disqus.html %}
-            {% endif %}
+                {% endif %}
 
-        </footer>
+            </footer>
 
-    </article>
+        </article>
 
-</main>
+    </main>

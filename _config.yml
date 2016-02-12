@@ -9,11 +9,18 @@ baseurl: /
 domain_name: 'http://www.ccampo.me'
 google_analytics: 'UA-61649602-1'
 
-# Details for the RSS feed generator
+# Author information
 url:            'https://www.ccampo.me'
 enforce_ssl:    'www.ccampo.me'
 author:         'Christopher J. Campo'
+location:       Orlando, USA
+website:        'https://www.ccampo.me'
+bio: >
+    I'm a senior sofware engineer for Aspect Cloud, dog lover, tech enthusiast,
+    gamer, husband, data hound, R/F tinkerer, linux user, amateur astronomer...
+    among other things!
 
+# Required gems
 gems:
-  - jekyll-paginate
-  - jekyll-gist
+    - jekyll-paginate
+    - jekyll-gist
