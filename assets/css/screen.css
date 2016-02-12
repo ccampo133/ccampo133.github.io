@@ -201,7 +201,7 @@ h4, h5, h6 {
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     color: #2E2E2E;
     line-height: 1.15em;
-    margin: 0 0 0.4em 0;
+    margin: 0 0 0 0;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -487,8 +487,8 @@ margin on the iframe, cause it breaks stuff. */
 
 .main-nav {
     position: relative;
-    padding: 35px 40px;
-    margin: 0 0 30px 0;
+    padding: 20px 40px 10px 40px;
+    margin: 0 0 10px 0;
 }
 
 .main-nav a {
@@ -681,7 +681,7 @@ margin on the iframe, cause it breaks stuff. */
 
 .no-cover.main-header {
     min-height: 160px;
-    max-height: 40%;
+    max-height: 20%;
     background: #f5f8fa;
 }
 
@@ -717,7 +717,7 @@ margin on the iframe, cause it breaks stuff. */
 .post {
     position: relative;
     width: 80%;
-    max-width: 710px;
+    max-width: 740px;
     margin: 4rem auto;
     padding-bottom: 4rem;
     border-bottom: #EBF2F6 1px solid;
@@ -764,7 +764,7 @@ body:not(.post-template) .post-title {
 
 .post-meta {
     display: block;
-    margin: 1.75rem 0 0 0;
+    margin: 0 0 2rem 0;
     font-family: "Open Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 2.2rem;
@@ -796,9 +796,6 @@ body:not(.post-template) .post-title {
 
 .post-date {
     display: inline-block;
-    margin-left: 8px;
-    padding-left: 12px;
-    border-left: #d5dbde 1px solid;
     text-transform: uppercase;
     font-size: 1.3rem;
     white-space: nowrap;
@@ -1582,7 +1579,6 @@ body:not(.post-template) .post-title {
 
     h1, h2, h3,
     h4, h5, h6 {
-        margin: 0 0 0.3em 0;
     }
 
     h1 {
