@@ -10,6 +10,15 @@
   <meta name="copyright" content="&copy; {{ site.name }} {{ site.time | date: '%Y' }}">
   {% endif %}
 
+  <!-- Hack to force client-side redirect to SSL -->
+  {% if site.enforce_ssl %}
+  <script type="text/javascript">
+  var host = "{{ site.enforce_ssl }}";
+  if ((host == window.location.host) && (window.location.protocol != "https:"))
+  window.location.protocol = "https";
+  </script>
+  {% endif %}
+
   <!-- External libraries -->
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/styles/{{ site.highlightjs_theme }}.min.css">
