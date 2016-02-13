@@ -2,6 +2,7 @@
 layout: post
 title:  "Configuring Multiple JDBC DataSources with Spring Boot"
 date:   2016-02-12 18:20:00
+author: Chris Campo
 categories: General Java Spring
 ---
 
@@ -41,20 +42,13 @@ And the `application.properties` file:
 datasource.primary.url=
 datasource.primary.username=
 datasource.primary.password=
-datasource.primary.testOnBorrow=true
-datasource.primary.validationQuery=SELECT 1
-datasource.primary.initialize=false
+# Any of the other Spring supported properties below...
 
 # Secondary DataSource configuration
 datasource.secondary.url=
 datasource.secondary.username=
 datasource.secondary.password=
-datasource.secondary.testOnBorrow=true
-datasource.secondary.validationQuery=SELECT 1
-datasource.secondary.initialize=false
-
-# Set this to toggle Spring Boot's JDBC auto-initialize
-spring.datasource.initialize=false
+# Any of the other Spring supported properties below...
 {% endhighlight %}
 
 
