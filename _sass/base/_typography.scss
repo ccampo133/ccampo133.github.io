@@ -45,13 +45,12 @@ p {
 a {
   color: $action-color;
   text-decoration: none;
-  // transition: color 0.1s linear;
+  transition: color ease 0.3s;
 
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 10%);
-    text-decoration: underline;
+    color: darken($action-color, 75%);
   }
 
   &:active,
