@@ -265,6 +265,18 @@ pre code.hljs {
 		}
 		.post-content {
 			padding: 1em 0;
+            a {
+                color: $blue;
+                &:active,
+                &:focus,
+                &:hover {
+                  color: darken($blue, 50%);
+                }
+                &:active,
+                &:focus {
+                  outline: none;
+                }
+            }
 		}
 		.tags {
 			font-size: 0.9em;
@@ -335,6 +347,20 @@ pre code.hljs {
 				color: $medium-gray;
 			}
 		}
+        .post-content {
+            a {
+                color: $blue;
+                &:active,
+                &:focus,
+                &:hover {
+                  color: darken($blue, 10%);
+                }
+                &:active,
+                &:focus {
+                  outline: none;
+                }
+            }
+        }
 		.profile {
 			max-width: 320px;
 			margin: auto;
