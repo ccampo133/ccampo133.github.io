@@ -1,10 +1,12 @@
 ---
 layout: post
 title:  "Creating Unix Services and RPM/DEB Packages with Spring Boot and Gradle"
-date:   2016-02-15 19:00:00
+date:   2016-02-15 18:47:00
 author: Chris Campo
 categories: Java Spring Spring-Boot Unix Linux
 ---
+
+<sup>(Skip it all and check out the [sample code on GitHub][democode]!)</sup>
 
 I work with [Spring Boot][boothome] daily, and it's probably one of my favorite frameworks ever. The amount of things
 it does that just make every-day JVM-dev life easier is absurd. Spring Boot has probably saved me hundreds of hours
@@ -32,10 +34,15 @@ Luckily, the guys over at [Netflix Nebula][nebula] have us covered. They produce
 Plugin (ospackage)][ospackage], which fits all the requirements. Throughout the rest of this post, I'll provide
 examples on how to create a simple service, package it as an RPM, and finally install and run.
 
-...Or you can just skip it all and check out the [sample code on GitHub][democode]!
+Before we get started, I'd just like to note that this post assumes at least a working knowledge of the following:
 
-To start, I've created a simple Spring Boot web service. Nothing fancy, however it can literally any Spring Boot
-application. For simplicity's sake, it's just a single MVC controller that returns the string `Hello world!`:
+* Spring Boot / Spring MVC
+* Gradle
+* Linux
+
+So now that that's out of the way,tTo start, I've created a simple Spring Boot web service. Nothing fancy, however it
+can literally any Spring Boot 1.3+ application. For simplicity's sake, it's just a single MVC controller that returns
+the string `Hello world!`:
 
 {% highlight java %}
 package me.ccampo.daemondemo;
@@ -184,20 +191,35 @@ and to build the DEB:
 Gradle will spit out the packages in the `build/distributions` directory. After that, it's just a simple matter of
 installing the package! On CentOS, installing the RPM can be done like so:
 
-    $ rpm -Uvh rpm -Uvh daemon-demo-0.0.1-1.noarch.rpm
+    $ rpm -Uvh daemon-demo-0.0.1-1.noarch.rpm
 
 In the demo above, I set it to install to `/opt/local/daemon-demo`. In the directory `/opt/local/daemon-demo/conf`,
 there are two config files which can be used to alter the runtime behavior of the application. The first,
 `daemon-demo.conf` is a standard conf file used to set some variable about the application.
 The [Spring Boot docs](confdocs) have more info on this, but the key is that this file needs to be next to the jar,
 which is installed to `/opt/local/daemon-demo/bin`, so a symlink is created to the `bin` directory as part of the RPM
-build task.
+build task. The second file is just the standard `application.properties` file, however this can be edited to adjust
+runtime properties! This is done by setting the `--spring.config.location` command line switch in the
+`daemon-demo.conf` file. Again, see the [source][democode] for more detail. Pretty cool eh?
 
+To run the app, just do `service daemon-demo start` and it should start up on port 8080 by default. You can view the
+app's log file in `/opt/local/daemon-demo/log/daemon-demo.log` as well.
+
+To do a full uninstall, just do:
+
+    $ rpm -e daemon-demo-0.0.1-1.noarch
+
+...and the package will be removed from the system, just like any other package.
+
+That's about it! I hope you all find this helpful! Thanks again to the amazing Spring Boot team for making a really
+incredible framework for developing applications. I'm sure there are plenty of other cool features like this that will
+be coming down the pipe soon!
+
+Once again, the full source of this demo application can be found on [GitHub][democode].
 
 [^1]: If your OS uses `systemd`, it's a little more complicated, but not much; check out [Spring's docs][bootdocs].
 
 [boothome]: http://projects.spring.io/spring-boot/
-[github]: https://github.com/ccampo133/spring-boot-oauth2-demo
 [bootdocs]: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#deployment-service
 [nebula]: http://nebula-plugins.github.io/
 [ospackage]: https://github.com/nebula-plugins/gradle-ospackage-plugin
