@@ -18,7 +18,7 @@ description: >
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
 baseurl:
-enforce_ssl: "ccampo.me"
+enforce_ssl: "www.ccampo.me"
 url: "https://www.ccampo.me"
 cover: "/assets/header_image.jpg"
 logo: "/assets/logo-180.png"
