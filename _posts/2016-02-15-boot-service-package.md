@@ -6,8 +6,6 @@ author: Chris Campo
 categories: Java Spring Spring-Boot Unix Linux
 ---
 
-<sup>(Skip it all and check out the [sample code on GitHub][democode]!)</sup>
-
 I work with [Spring Boot][boothome] daily, and it's probably one of my favorite frameworks ever. The amount of things
 it does that just make every-day JVM-dev life easier is absurd. Spring Boot has probably saved me hundreds of hours
 in headaches.
@@ -39,6 +37,8 @@ Before we get started, I'd just like to note that this post assumes at least a w
 * Spring Boot / Spring MVC
 * Gradle
 * Linux
+
+<sup>(Skip it all and check out the [sample code on GitHub][democode]!)</sup>
 
 So now that that's out of the way,tTo start, I've created a simple Spring Boot web service. Nothing fancy, however it
 can literally any Spring Boot 1.3+ application. For simplicity's sake, it's just a single MVC controller that returns
