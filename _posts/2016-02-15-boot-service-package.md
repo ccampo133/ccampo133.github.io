@@ -3,7 +3,7 @@ layout: post
 title:  "Creating Unix Services and RPM/DEB Packages with Spring Boot and Gradle"
 date:   2016-02-15 18:47:00
 author: Chris Campo
-categories: java spring spring-boot unix linux
+categories: java spring linux
 ---
 
 I work with [Spring Boot][boothome] daily, and it's probably one of my favorite frameworks ever. The amount of things
@@ -225,3 +225,4 @@ Once again, the full source of this demo application can be found on [GitHub][de
 [ospackage]: https://github.com/nebula-plugins/gradle-ospackage-plugin
 [democode]: https://github.com/ccampo133/boot-daemon-demo
 [confdocs]: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#deployment-script-customization-conf-file
+[aspect]: http://www.aspect.com/
