@@ -3,7 +3,7 @@ layout: post
 title:  "Hello World!"
 date:   2015-04-14 18:05:00
 author: Chris Campo
-categories: General
+categories: general
 ---
 
 Hello world! This is my first (but hopefully not last) blog post! My goal is to write about anything I find interesting,

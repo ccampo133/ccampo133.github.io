@@ -3,7 +3,7 @@ layout: post
 title:  "Configuring Multiple JDBC DataSources with Spring Boot"
 date:   2016-02-13 19:54:00
 author: Chris Campo
-categories: General Java Spring
+categories: general java spring
 ---
 I spent probably an hour or so yesterday learning how to enable multiple
 `DataSource`s in a Spring Boot application, and have them be configurable via

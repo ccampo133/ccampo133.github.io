@@ -3,7 +3,7 @@ layout: post
 title:  "Creating Unix Services and RPM/DEB Packages with Spring Boot and Gradle"
 date:   2016-02-15 18:47:00
 author: Chris Campo
-categories: Java Spring Spring-Boot Unix Linux
+categories: java spring spring-boot unix linux
 ---
 
 I work with [Spring Boot][boothome] daily, and it's probably one of my favorite frameworks ever. The amount of things
