@@ -40,7 +40,7 @@ Before we get started, I'd just like to note that this post assumes at least a w
 
 <sup>(Skip it all and check out the [sample code on GitHub][democode]!)</sup>
 
-So now that that's out of the way,tTo start, I've created a simple Spring Boot web service. Nothing fancy, however it
+So now that that's out of the way, to start, I've created a simple Spring Boot web service. Nothing fancy, however it
 can literally any Spring Boot 1.3+ application. For simplicity's sake, it's just a single MVC controller that returns
 the string `Hello world!`:
 
@@ -226,3 +226,4 @@ Once again, the full source of this demo application can be found on [GitHub][de
 [democode]: https://github.com/ccampo133/boot-daemon-demo
 [confdocs]: http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#deployment-script-customization-conf-file
 [aspect]: http://www.aspect.com/
+[centos]: https://www.centos.org/
