@@ -3,7 +3,7 @@ layout: post
 title:  "Using Spring with AWS Lambda"
 date:   2016-11-27 15:00:00
 author: Chris Campo
-categories: java spring aws
+categories: General
 ---
 
 I love [AWS Lambda](lambda). Removing the concept of a "server" from your application is huge. I won't go into all 
