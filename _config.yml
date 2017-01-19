@@ -10,7 +10,7 @@ exclude:
 # Site settings
 title: Christopher J. Campo
 subtitle: "A collection of things I find interesting."
-email: cccampo-progs@gmail.com
+email: cccampo.progs@gmail.com
 name: Chris Campo
 description: >
     I'm Chris Campo, and this is a collection of things I find interesting.
@@ -101,6 +101,13 @@ social:
     url: https://www.linkedin.com/in/christopher-campo-9104a347
     desc: Connect with me on LinkedIn
     share: true
+
+  - name: Keybase
+    icon: key
+    username: ccampo
+    url: https://keybase.io/ccampo
+    desc: Speak privately with Keybase
+    share: false
 
   - name: Google+
     icon: google-plus
