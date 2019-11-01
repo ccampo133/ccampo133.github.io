@@ -3,7 +3,7 @@ layout: post
 title:  "Java in a Container: Resource Allocation Guidelines"
 date:   2019-10-31 17:09:00
 author: Chris Campo
-categories: java docker container kubernetes
+categories: java docker containers kubernetes
 ---
 
 Containers have changed the face of the software industry in just a few short years. Perhaps you've gotten to the point
