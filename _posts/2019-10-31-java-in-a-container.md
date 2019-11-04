@@ -86,8 +86,8 @@ reason.
 
 * If you do want to tweak these, be conservative. 50% is most likely a safe value where you can expect to avoid issues 
 (in most cases), however this is still is largely dependent on how big (memory-wise) your container is. I don't 
-recommend going to 75% unless your container has at least 1 GB of RAM, and you have a good understanding of the memory 
-usage of the application in question.
+recommend going to 75% unless your container has at least 512 MB of RAM (preferably 1 GB), and you have a good 
+understanding of the memory usage of the application in question.
 
 * If your container is running multiple processes in addition to Java, be extra cautious when tweaking these values.
 The container memory is shared across all of these processes, and understanding total container memory usage in these 
