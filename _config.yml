@@ -9,11 +9,11 @@ exclude:
 
 # Site settings
 title: Christopher J. Campo
-subtitle: "A collection of things I find interesting."
+subtitle: "Some things I find interesting."
 email: ccampo.progs@gmail.com
 name: Chris Campo
 description: >
-    I'm Chris Campo, and this is a collection of things I find interesting.
+    I'm Chris Campo, and these are some things I find interesting.
 
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
