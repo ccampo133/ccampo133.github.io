@@ -109,13 +109,6 @@ social:
     desc: Speak privately with Keybase
     share: false
 
-  - name: Google+
-    icon: google-plus
-    username:
-    url:
-    desc: Add me to your Circles
-    share: true
-
   - name: YouTube
     icon: youtube
     username:
