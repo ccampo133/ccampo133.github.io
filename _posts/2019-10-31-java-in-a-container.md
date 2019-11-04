@@ -93,7 +93,7 @@ understanding of the memory usage of the application in question.
 The container memory is shared across all of these processes, and understanding total container memory usage in these 
 cases is more complicated.
 
-* Anything over 80% is probably asking for trouble.
+* Anything over 90% is probably asking for trouble.
 
 ## What about Metaspace/PermGen/etc?
 
