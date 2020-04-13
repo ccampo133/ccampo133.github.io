@@ -205,6 +205,20 @@ pre code.hljs {
 		padding-top: 1em !important;
 		@extend %default-ul;
 	}
+	.post-excerpt {
+		a {
+			color: $blue;
+			&:active,
+			&:focus,
+			&:hover {
+				color: darken($blue, 50%);
+			}
+			&:active,
+			&:focus {
+				outline: none;
+			}
+		}
+	}
 	.post-meta {
 		@include outer-container;
 		// padding: 1em 0;
@@ -227,6 +241,11 @@ pre code.hljs {
 		color: $medium-gray;
 		.page-number {
 			padding: 0 1em;
+		}
+		.newer-posts {
+			&:hover {
+				text-decoration: none;
+			}
 		}
 	}
 	.site-header-container {
