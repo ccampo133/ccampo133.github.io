@@ -242,6 +242,11 @@ pre code.hljs {
 		.page-number {
 			padding: 0 1em;
 		}
+		.newer-posts {
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 	.site-header-container {
 		color: $white;
