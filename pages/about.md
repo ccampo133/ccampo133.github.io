@@ -8,9 +8,9 @@ permalink: /about/
 
 I am currently working as a Senior Engineer at [Cyral](https://cyral.com/). I have a B.S. in Physics with minors in 
 Mathematics and Computer Science from the University of Central Florida. When I'm not writing code or digging through a 
-database, I enjoy playing golf, fly fishing, hiking, and the outdoors in general. I'm also fond of chess, and do some 
-light PC gaming in some of my free time. Oh, and I also collect watches. Honestly, I probably have too many hobbies to 
-list!
+database, I enjoy playing piano, playing golf, fly fishing, hiking, and enjoying the outdoors in general. I'm also fond
+of chess, and do some light PC gaming in some of my free time. Oh, and I also collect watches. Honestly, I probably have
+too many hobbies to list!
 
 I occasionally volunteer some amateur astronomy research at my alma mater UCF, and continue to stay in touch with the 
 scientific community. I enjoy mentoring colleagues who are new to the industry, especially new grads. I've led technical
