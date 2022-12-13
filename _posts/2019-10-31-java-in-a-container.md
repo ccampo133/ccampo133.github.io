@@ -2,7 +2,7 @@
 layout: post
 title:  "Java in a Container: Resource Allocation Guidelines"
 date:   2019-10-31 17:09:00
-author: Chris Campo
+author: C. Campo
 categories: java docker containers kubernetes
 ---
 

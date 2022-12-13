@@ -2,7 +2,7 @@
 layout: post
 title:  "ccampo.ninja"
 date:   2019-10-04 13:21:00
-author: Chris Campo
+author: C. Campo
 categories: general
 ---
 
