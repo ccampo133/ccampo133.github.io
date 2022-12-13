@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!"
 date:   2015-04-14 18:05:00
-author: Chris Campo
+author: C. Campo
 categories: general
 ---
 

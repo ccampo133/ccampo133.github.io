@@ -2,7 +2,7 @@
 layout: post
 title:  "Creating Unix Services and RPM/DEB Packages with Spring Boot and Gradle"
 date:   2016-02-15 18:47:00
-author: Chris Campo
+author: C. Campo
 categories: java spring linux
 ---
 

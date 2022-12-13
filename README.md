@@ -7,6 +7,26 @@ theme. Check out that page for more info on how to use said theme.
 
 ## Development
 
-To run locally (with draft posts)
+Use RVM: 
 
-     bundle exec jekyll serve --drafts
+* https://rvm.io/rvm/install
+
+Install Ruby 2.X:
+
+```sh
+rvm install ruby-2.7.5
+
+rvm use 2.7.5
+```
+
+Then install dependencies:
+
+```sh
+bundle install
+```
+
+Run locally (with draft posts):
+
+```sh
+bundle exec jekyll serve --drafts
+```

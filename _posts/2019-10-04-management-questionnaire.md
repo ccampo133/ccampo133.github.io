@@ -2,7 +2,7 @@
 layout: post
 title:  "Answers To A Management Questionnaire (With Commentary)"
 date:   2019-10-04 14:02:00
-author: Chris Campo
+author: C. Campo
 categories: general management work reflection
 ---
 

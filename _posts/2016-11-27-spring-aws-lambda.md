@@ -2,7 +2,7 @@
 layout: post
 title:  "Using Spring with AWS Lambda"
 date:   2016-11-27 15:00:00
-author: Chris Campo
+author: C. Campo
 categories: java spring aws
 ---
 
