@@ -7,26 +7,14 @@ theme. Check out that page for more info on how to use said theme.
 
 ## Development
 
-Use RVM: 
-
-* https://rvm.io/rvm/install
-
-Install Ruby 2.X:
+See: https://github.com/envygeeks/jekyll-docker/blob/master/README.md
 
 ```sh
-rvm install ruby-2.7.5
-
-rvm use 2.7.5
-```
-
-Then install dependencies:
-
-```sh
-bundle install
-```
-
-Run locally (with draft posts):
-
-```sh
-bundle exec jekyll serve --drafts
+JEKYLL_VERSION=3.8
+docker run -it --rm \
+  --volume="$PWD:/srv/jekyll:Z" \
+  --volume="$PWD/vendor/bundle:/usr/local/bundle:Z" \
+  --publish "4000:4000" \
+  jekyll/jekyll:$JEKYLL_VERSION \
+  jekyll serve --drafts
 ```

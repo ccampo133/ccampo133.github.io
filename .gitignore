@@ -10,3 +10,4 @@ Gemfile.lock
 *.iws
 *.ids
 .idea/
+vendor
