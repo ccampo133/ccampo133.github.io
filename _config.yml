@@ -74,20 +74,6 @@ ga_tracking_id: "UA-61649602-1"
 #     desc: Follow me on Twitter            # Description to display as link title, etc
 #     share: true                           # Include in the "Share" section of posts
 social:
-  - name: Twitter
-    icon: twitter
-    username: campo133
-    url: https://twitter.com/campo133
-    desc: Follow me on Twitter
-    share: true
-
-  - name: Facebook
-    icon: facebook
-    username: thebencentra
-    url:
-    desc: Friend me on Facebook
-    share: true
-
   - name: GitHub
     icon: github
     username: ccampo133
@@ -177,6 +163,20 @@ social:
     username:
     url:
     desc: Share to Reddit
+    share: true
+
+  - name: Twitter
+    icon: twitter
+    username:
+    url:
+    desc: Follow me on Twitter
+    share: true
+
+  - name: Facebook
+    icon: facebook
+    username:
+    url:
+    desc: Friend me on Facebook
     share: true
 
 # Social sharing protocols
