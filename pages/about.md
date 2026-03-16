@@ -6,7 +6,7 @@ permalink: /about/
 
 <img src="{{ site.baseurl }}/assets/images/me.jpg" title="Me (c. 2021)" class="profile">
 
-I am currently working as an engineer at [Cyral][work]. I have a B.S. in Physics
+I am currently working as an engineer at [Raft][work]. I have a B.S. in Physics
 with minors in Computer Science and Mathematics from the University of Central
 Florida. When I'm not writing code or digging through a database, I enjoy 
 playing piano, playing golf, fly fishing, hiking, and enjoying the outdoors in 
@@ -26,4 +26,4 @@ My [PGP public key](/assets/misc/pgp_key.asc) fingerprint is
 
 ---
 
-[work]: https://cyral.com/
+[work]: https://teamraft.com/
