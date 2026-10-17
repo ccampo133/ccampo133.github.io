@@ -11,6 +11,10 @@ layout: default
     {{ content }}
   </div>
 
+  <figure class="home-landscape">
+    <img src="{{ site.baseurl }}/assets/images/yokohama-bay.jpg" alt="Mountains, blue ocean, and the rocky coastline at Yokohama Bay, Oʻahu." width="1600" height="1067">
+  </figure>
+
   <nav class="contact-links" aria-label="Contact and profiles">
     {% for social in site.social %}
       {% if social.name == "GitHub" or social.name == "LinkedIn" %}

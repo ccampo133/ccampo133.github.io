@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Christopher Campo
+title: Christopher J. Campo
 permalink: /about/
 canonical_url: /
 main_nav: false
