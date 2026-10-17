@@ -27,7 +27,7 @@ logo: "/assets/logo-180.png"
 # Build settings
 markdown: kramdown
 inter_post_navigation: false
-highlightjs_theme: "monokai_sublime"
+highlightjs_theme: "github"
 
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
 # jekyll-archives:
