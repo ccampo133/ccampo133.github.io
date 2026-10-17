@@ -1,27 +1,24 @@
 ---
 layout: page
-title: "Posts"
+title: Writing
 permalink: /posts/
+main_nav: false
+content_class: writing
 ---
 
-{% for category in site.categories %}
-  {% capture cat %}{{ category | first }}{% endcapture %}
-  <h2>{{ cat | capitalize }}</h2>
-  {% for desc in site.descriptions %}
-    {% if desc.cat == cat %}
-      <p class="desc"><em>{{ desc.desc }}</em></p>
-    {% endif %}
-  {% endfor %}
-  <ul class="posts-list">
-  {% for post in site.categories[cat] %}
+<p class="page-intro">Occasional notes on software and other things I find interesting.</p>
+
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{% for year in posts_by_year %}
+<section class="writing-year" aria-labelledby="year-{{ year.name }}">
+  <h2 id="year-{{ year.name }}">{{ year.name }}</h2>
+  <ul class="writing-list">
+    {% for post in year.items %}
     <li>
-      <strong>
-        <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </strong>
-      <span class="post-date">- {{ post.date | date_to_long_string }}</span>
+      <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%b %-d' }}</time>
     </li>
-  {% endfor %}
+    {% endfor %}
   </ul>
-  {% if forloop.last == false %}<hr>{% endif %}
+</section>
 {% endfor %}
-<br>

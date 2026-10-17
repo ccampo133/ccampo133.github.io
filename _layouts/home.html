@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<main id="main" class="page-shell home">
+  <header class="home-heading">
+    <h1>{{ site.name }}</h1>
+    <img class="portrait" src="{{ site.baseurl }}/assets/images/me.jpg" alt="{{ site.name }}" width="112" height="112">
+  </header>
+
+  <div class="biography">
+    {{ content }}
+  </div>
+
+  <nav class="contact-links" aria-label="Contact and profiles">
+    {% for social in site.social %}
+      {% if social.name == "GitHub" or social.name == "LinkedIn" %}
+    <a href="{{ social.url }}">{{ social.name }}</a>
+      {% endif %}
+    {% endfor %}
+    <a href="mailto:{{ site.email }}">Email</a>
+  </nav>
+</main>

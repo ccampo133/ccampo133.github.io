@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
   {% include head.html %}
-
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-        {{ content }}
-    </div>
-
+    <a class="skip-link" href="#main">Skip to content</a>
+    {% unless page.layout == "home" %}
+      {% include header.html %}
+    {% endunless %}
+    {{ content }}
     {% include footer.html %}
-
+    {% include analytics.html %}
   </body>
-
 </html>

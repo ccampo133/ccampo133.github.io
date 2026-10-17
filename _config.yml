@@ -13,7 +13,7 @@ subtitle: "Some things I find interesting."
 email: chris@ccampo.me
 name: Christopher Campo
 description: >
-    I'm Chris Campo, and these are some things I find interesting.
+    Christopher Campo is a software engineer with a background in physics and interests in astronomy, piano, and the outdoors.
 
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
@@ -26,8 +26,6 @@ logo: "/assets/logo-180.png"
 
 # Build settings
 markdown: kramdown
-paginate: 5
-paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai_sublime"
 
